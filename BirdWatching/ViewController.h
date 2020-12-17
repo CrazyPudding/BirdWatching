@@ -6,9 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BirdSightingDataController.h"
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) BirdSightingDataController *dataController;
 
 @end
 

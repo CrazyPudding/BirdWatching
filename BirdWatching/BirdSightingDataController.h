@@ -8,6 +8,9 @@
 #import <Foundation/Foundation.h>
 #import "BirdSighting.h"
 
+// forward declaration： 将其当作一个类
+@class BirdSightingDataController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BirdSightingDataController : NSObject
