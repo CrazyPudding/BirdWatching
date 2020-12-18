@@ -8,9 +8,11 @@
 #import <UIKit/UIKit.h>
 #import "BirdSightingDataController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UITableViewController
 
 @property (strong, nonatomic) BirdSightingDataController *dataController;
 
+- (IBAction)done:(UIStoryboardSegue *)segue;
+- (IBAction)cancel:(UIStoryboardSegue *)segue;
 @end
 
