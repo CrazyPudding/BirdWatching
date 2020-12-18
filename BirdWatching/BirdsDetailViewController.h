@@ -14,9 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BirdsDetailViewController : UITableViewController
 
 @property (strong, nonatomic) BirdSighting *sighting;
-@property (weak, nonatomic) IBOutlet *birdNameLabel;
-@property (weak, nonatomic) IBOutlet *locationLabel;
-@property (weak, nonatomic) IBOutlet *dataLabel;
+@property (weak, nonatomic) IBOutlet UILabel *birdNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *locationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dataLabel;
 
 @end
 
