@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) BirdSighting *sighting;
 @property (weak, nonatomic) IBOutlet UILabel *birdNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
-@property (weak, nonatomic) IBOutlet UILabel *dataLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
 @end
 

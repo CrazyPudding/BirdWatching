@@ -9,7 +9,7 @@
 #import "BirdSighting.h"
 
 @interface BirdsDetailViewController ()
-
+- (void)configureView;
 @end
 
 @implementation BirdsDetailViewController
@@ -17,11 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self configureView];
 }
 
 - (void)setSighting:(BirdSighting *)newSighting {
@@ -45,20 +41,8 @@
     if (theSighting) {
         self.birdNameLabel.text = theSighting.name;
         self.locationLabel.text = theSighting.location;
-        self.dataLabel.text = [formatter stringFromDate:(NSDate *)theSighting.date];
+        self.dateLabel.text = [formatter stringFromDate:(NSDate *)theSighting.date];
     }
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
 }
 
 /*
